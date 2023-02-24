@@ -96,6 +96,13 @@ button:focus-visible {
   }
 }
 
+
+
+#canvas {
+  width:100vw;
+  height:100vh;
+}
+
 #video {
   position: absolute;
   top: 0;
