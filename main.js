@@ -13,3 +13,16 @@ navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } })
   window.addEventListener("load", () => {
     // put the above code here
   });
+
+  var canvas = document.getElementById('canvas'),
+ctx = canvas.getContext('2d');
+
+window.onresize = function() {
+  handleResize();
+};
+handleResize();
+
+function handleResize() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
